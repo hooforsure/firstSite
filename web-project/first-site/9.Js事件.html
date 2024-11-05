@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .button{
+      width: 100px;
+    height: 100px; color:green"     
+    }
+  </style>
+</head>
+<body></body>
+    <button onclick="click_event()">按钮</button>
+    
+    <input type="text" onfocus="onfocus_event()" onblur="onblur_event()">
+    <script>
+      function click_event(){
+        alert("open the door");
+      } 
+      // 聚焦失焦
+      function onfocus_event(){
+        console.log("get focus");
+      } 
+      function onblur_event(){
+        console.log("lose focus");
+      } 
+    </script>
+</body>
+</html>

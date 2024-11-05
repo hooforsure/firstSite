@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box1">1</div>
+  <div class="box2">2</div>
+  <div>regular</div>
+  <button>button</button>
+<script>
+  //获取不同元素
+  var ele1=document.getElementById("box1");
+  console.log(ele1);
+
+  var ele2=document.getElementsByClassName("box2")[0];
+  console.log(ele2);
+
+  var ele3=document.getElementsByTagName("div")[2];
+  console.log(ele3);
+
+  ele1.innerHTML="haha";
+  ele2.innerText="hh";
+
+  ele3.style.color='red';
+  ele3.style.fontSize="20px";
+
+  //属性绑定到某事件（函数）
+  var button_ele=document.getElementsByTagName("button")[0];
+  //匿名函数
+  button_ele.onclick=function(){
+    alert("属性按键触发");
+  }
+
+  // button_ele.addEventListener('click',function(){
+  //   alert("另一种触发");
+  // })
+
+</script>
+  
+  
+</body>
+</html>

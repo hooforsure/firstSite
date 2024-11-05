@@ -1,0 +1,1 @@
+console.log("Hello我是外联样式");

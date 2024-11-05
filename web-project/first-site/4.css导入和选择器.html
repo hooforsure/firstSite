@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css导入</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* 元素选择器 */
+    p{
+      width: 50px;
+    }
+
+    /* 类选择器 */
+    .head{
+      color: gray;
+    }
+
+    /* id选择器 */
+    #st{
+      color: rgb(178, 31, 31);
+      /* font-size: 60px; */
+    }
+
+    /* 通用选择器 */
+    *{
+      white-space: nowrap;
+      font-family: 'kaiti';
+      font-weight: bolder;
+    }
+
+    /* 子元素选择器 */
+    .father>.son{
+      color:blue;
+    }
+    
+    /* 后代选择器 */
+    .father p{
+      color:rgb(26, 255, 41);
+    }
+
+    /* 相邻元素选择器 */
+    h3+p{
+      background-color: rgb(243, 12, 158);
+    }
+
+    /* 伪类选择器 */
+    #element:hover{
+      background-color: rgb(80, 14, 245);
+    }
+  </style>
+
+</head>
+<body>
+  <p>nbbbbb</p>
+  <h1 class="head">这是对嘞</h1>
+  <h2 id="st">可以</h2>
+
+  <div class="father" style="display:inline-block">
+    <p class="son">孩子</p>
+    <div>
+      <p class="grandson">孙子</p>
+    </div>
+  </div>
+
+  <p>p标签</p>
+  <h3>h标签</h3>
+  <p>p标签</p>
+
+  <h4 id="element">KKKK</h4>
+
+  <p style="font: bolder 'kaiti' 88px">属性复用</p>
+</body>
+</html>
